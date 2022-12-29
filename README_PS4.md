@@ -1,4 +1,5 @@
 ## Building
+```
 1. Download the pacbrew-pacman from following location and install.
    https://github.com/PacBrew/pacbrew-pacman/releases
 2. Run following cmds
@@ -8,3 +9,4 @@
    source /opt/pacbrew/ps4/openorbis/ps4vars.sh
    cp build_rules.mk /opt/pacbrew/ps4/openorbis/
    make install
+```
