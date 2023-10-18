@@ -8,7 +8,8 @@ ifeq ($(strip $(OO_PS4_TOOLCHAIN)),)
 $(error "Please set OO_PS4_TOOLCHAIN in your environment. export OO_PS4_TOOLCHAIN=<path>")
 endif
 
-include $(OO_PS4_TOOLCHAIN)/build_rules.mk
+CURRENT_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+include $(CURRENT_DIR)/build_rules.mk
 
 #---------------------------------------------------------------------------------
 ifeq ($(strip $(PLATFORM)),)
